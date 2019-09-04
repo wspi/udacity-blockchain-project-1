@@ -41,7 +41,7 @@ class Block {
             let current_hash = self.hash;
 						self.hash = null;
 
-            var calculated_hash = SHA256(JSON.stringify(self.block)).toString();
+            var calculated_hash = SHA256(JSON.stringify(self)).toString();
 
 						self.hash = current_hash;
 

@@ -206,7 +206,7 @@ class Blockchain {
                   previousBlockHash = self.chain[height-1].hash;
               }
 
-              if (block.previousHash != previousBlockHash) {
+              if (block.previousBlockHash != previousBlockHash) {
                   errorLog.push('Invalid previous Block Hash');
               }
 
